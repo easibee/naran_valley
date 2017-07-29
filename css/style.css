@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    font-family: "Arial";
+    background-color: white;
+}
+
+main {
+    min-width: 320px;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+main>div.ourPromiseContainer>div.imageBanner>h1,
+h2 {
+    font-family: 'Cherry Swash';
+    font-size: 2em;
+}
+
+main>div.ourPromiseContainer>div.imageBanner>h1 {
+    font-size: 5em;
+}
+
+div.container {
+    max-width: 1280px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 50px 40px;
+   
+}
+
+hr {
+    margin: 40px 0;
+}
+
+main div.imageBanner {
+    width: 100%;
+    padding-bottom: 129px;
+    text-align: center;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+main div.imageBanner > h1 {
+    margin: 0;
+    padding-top: 204px;
+    font-size: 6.25em;
+    font-family: "futura-pt";
+    font-weight: 300;
+    color: #ffffff;
+    -webkit-text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    -moz-text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+main div.imageBanner > h1 > i.fa-angle-down {
+    display: block;
+}
+
+div.carouselContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-width: 320px;
+}
+
+div.carouselContainer div.frame {
+    position: absolute;
+    width: 100%;
+    padding-top: 20%;
+    box-sizing: border-box;
+    border: 6px solid #333;
+    z-index: 2;
+}
+
+div.carouselContainer div.carouselHolder {
+    position: relative;
+}
+    
+div.carouselContainer div.carouselHolder > div {
+    float: left;
+    position: relative;
+    border: 6px solid #333;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    box-sizing: border-box;
+}
+
+div.carouselContainer div.carouselHolder > div > img {
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+
+div.carouselContainer > a {
+    position: absolute;
+    margin: 1%;
+    z-index: 3;
+    color: floralwhite;
+}
+
+div.carouselContainer > a:hover {
+    cursor: pointer;
+    color: darkgreen;
+}
+
+div.carouselContainer > a.disabled {
+    opacity: 0.2;
+    cursor: context-menu;
+    color: floralwhite;
+}
+
+div.carouselContainer > a.nextImage {
+    top: 50%;
+    margin-top: -1em;
+    right: 0;
+}
+
+div.carouselContainer > a.previousImage {
+    top: 50%;
+    margin-top: -1em;
+    left: 0;
+}
+
+div#map {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-family: "futura-pt";
+    font-weight: 400;
+}
+
+@media only screen and (max-width:480px) {
+    main {
+        padding-bottom: 76px;
+    }
+    
+    main div.imageBanner {
+        padding-bottom: 81px;
+    }
+    
+    main div.imageBanner > h1 {
+        padding-top: 125px;
+        font-size: 2.75em;
+    }
+    
+    div.container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+    main {
+        padding-bottom: 94px;
+    }
+    
+    main div.imageBanner > h1 {
+        padding-top: 148px;
+        font-size: 3.75em;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    div.container {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    div.container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
